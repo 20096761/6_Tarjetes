@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tarjetes codeartist</title>
+        <style type="text/css">
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            img{
+                width: 100%;
+            }
+            body{
+                height: 100%;
+                background: linear-gradient(38deg, red, purple);
+            }
+            .contenidor{
+                width: 100%;
+                display: flex;
+                padding: 2em;
+                justify-content: center;
+                flex-direction: row;   
+                flex-grow: 1;
+            }
+            .dissenyador{
+                border-radius: 20px 20px 0 0;
+                width: 35em;
+                margin: 1em;
+                background: rgba(245, 245, 245, 0.8);
+                display: flex;
+                flex-direction: column;
+            }
+            .cont_img{
+                border-radius: 20px 20px 0 0;
+                height: 300px;
+            }
+            .cont_img img{
+                filter: grayscale(100%);
+                mix-blend-mode: lighten;
+                border-radius: 20px 20px 0 0;
+                overflow: hidden;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+            header{
+                display: flex;
+                align-items: baseline;
+/* nos separará los elementos de punta a punta del espacio proporcionalmente */
+                justify-content: space-between;
+                margin: 0.5em 1em;
+                padding: 0 0 0.2em 0;
+                border-bottom: 1px solid purple;
+            }
+            h3{
+                font-weight: 600;
+                font-style: normal;
+            }
+            h4{
+                font-weight: 500;
+                font-style: italic;
+            }
+            .cont_text{
+                margin: 1.5em 1em 0.5em 1em;
+                color: purple;
+                text-align: justify;
+                hyphens: auto;
+                font-size: 0.9em;
+                line-height: 1.4em;
+            }
+            .peu_dissenyador{
+                border-radius: 20px 20px 0 0;
+                flex-grow: 1;
+                background: purple;
+                color: white;
+                font-style: italic;
+                font-size: 0.9em;
+                padding: 1.5em 1em;
+            }
+            @media(max-width:600px){
+                body{
+                    font-size: 14px;
+                }
+                .contenidor{
+                    flex-direction: column;
+                }
+                .dissenyador{
+                    width: 50em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenidor">
+            <div class="dissenyador">
+                <div class="cont_img">
+                    <img src="img/VIGNELLI.jpg" alt="vignelli">
+                </div>
+                <header>
+                    <h3>Massimo Vignelli</h3>
+                    <h4>1931-2014</h4>
+                </header>
+                <div class="cont_text">
+                    <p>Massimo Vignelli fue un importante y afamado diseñador gráfico e industrial italiano del siglo XX. Trabajó en varios trabajos importantes de diseño, diseño de muebles, diseño de salas de exposición y diseño de almacenes. Creó su propia firma, Vignelli Associates, junto con su esposa. Basó su obra en el modernismo y simplicidad, que se manifiesta a través de su gusto por el uso de diseño geométricos.
+                    Conocido por su mayor creación, el mapa del metro de la ciudad de New York, y el logotipo de American Airlines, entre otros muchos diseños. Sin embargo, dicho mapa no era un mapa, sino que eran representaciones destinadas a que las rutas y paradas fueran mucho más fáciles de entender.</p>
+                </div>
+                <div class="peu_dissenyador">
+                    <p>"El diseño es un campo que abarca todo el mundo exterior que nos rodea", comentó Vignelli en una entrevista realizada por New York Times.</p>
+                </div>
+            </div>
+            <div class="dissenyador">
+                <div class="cont_img">
+                    <img src="img/kate.jpg" alt="kate">
+                </div>
+                <header>
+                    <h3>Kate Moross</h3>
+                    <h4>1986</h4>
+                </header>
+                <div class="cont_text">
+                    <p>An dolor laborum, doctrina quid ad ingeniis philosophari qui nescius de amet 
+                        incurreret, mentitum ab malis mandaremus. Cillum sempiternum expetendis aliqua 
+                        mandaremus. Ab quae excepteur eiusmod, o de quae amet summis, varias ex qui 
+                        irure expetendis, et dolor officia offendit. Labore distinguantur fabulas esse 
+                        quamquam. Non dolore reprehenderit de ea quem arbitror excepteur eu ita varias 
+                        distinguantur est summis nam ingeniis, se eu exercitation, voluptate noster de 
+                        laboris efflorescere ab aliquip ex commodo, aut quae si amet. Quem exercitation 
+                        doctrina fugiat voluptate. Fugiat sed fabulas.</p>
+                </div>
+                <div class="peu_dissenyador">
+                    <p>Labore deserunt a sempiternum, proident philosophari o expetendis qui cupidatat 
+                        irure fore mandaremus cillum ne aute in de magna ingeniis se legam ita ingeniis, 
+                        te irure tempor familiaritatem an sed quis mandaremus, amet philosophari 
+                        cupidatat minim incididunt.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
